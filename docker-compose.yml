@@ -1,0 +1,7 @@
+version: '3.6'
+
+services:
+
+  java:
+    build: .
+    image: rayba82/java:11
