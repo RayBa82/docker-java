@@ -1,4 +1,4 @@
-FROM rayba82/debian:stretch
+FROM rayba82/debian:latest
 
 MAINTAINER RayBa "rainerbaun@gmail.com"
 
