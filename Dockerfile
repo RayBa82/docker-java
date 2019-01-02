@@ -30,3 +30,7 @@ RUN git clone https://RayBa82@bitbucket.org/RayBa82/java-healthcheck.git health 
 
 
 RUN apt-get remove -y git wget --autoremove --purge
+
+ADD libtcnative-1_1.2.18-1_bpo9+1_amd64.deb /opt/
+RUN apt -y install /opt/libtcnative-1_1.2.18-1_bpo9+1_amd64.deb
+RUN ln -sv /usr/lib/x86_64-linux-gnu/libtcnative-1.so /usr/lib/
